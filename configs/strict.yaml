@@ -1,0 +1,13 @@
+# Strict policy: every non-trace result blocks.
+disable-secrets: false
+fail-on:
+    - "critical"
+    - "high"
+    - "medium"
+    - "low"
+    - "info"
+ignore-on-exit: "none"
+log-level: "INFO"
+report-formats:
+    - "json"
+timeout: 120

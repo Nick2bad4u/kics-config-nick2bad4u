@@ -1,0 +1,13 @@
+# Report policy findings without blocking; engine failures remain fatal.
+disable-secrets: false
+fail-on:
+    - "critical"
+    - "high"
+    - "medium"
+    - "low"
+    - "info"
+ignore-on-exit: "results"
+log-level: "INFO"
+report-formats:
+    - "json"
+timeout: 120

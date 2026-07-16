@@ -1,0 +1,14 @@
+# CI policy with machine-readable JSON and SARIF reports.
+ci: true
+disable-secrets: false
+fail-on:
+    - "critical"
+    - "high"
+ignore-on-exit: "none"
+log-level: "INFO"
+output-name: "kics-results"
+output-path: ".kics-results"
+report-formats:
+    - "json"
+    - "sarif"
+timeout: 120

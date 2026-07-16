@@ -1,0 +1,11 @@
+# Opt in to experimental queries while retaining the balanced high-risk gate.
+disable-secrets: false
+experimental-queries: true
+fail-on:
+    - "critical"
+    - "high"
+ignore-on-exit: "none"
+log-level: "INFO"
+report-formats:
+    - "json"
+timeout: 120
